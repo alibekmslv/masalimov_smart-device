@@ -1,0 +1,68 @@
+.landing-features-list {
+  list-style-type: none;
+  max-width: 1170px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+
+.landing-features-list__item {
+  border-width: 1px;
+  border-style: solid;
+  border-color: $landing-features-list__item-border-color;
+  border-left-width: 0;
+  position: relative;
+  padding-right: 45px;
+  padding-left: 45px;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    left: 0px;
+    width: 3px;
+    height: 100%;
+    background-color: $landing-features-list__item-border-left-color;
+  }
+
+  &:hover {
+    background-color: $landing-features-list__item-bgc-hover;
+    cursor: pointer;
+
+    .landing-features-list__title {
+      color: $landing-features-list__title-color-hover;
+    }
+
+    .landing-features-list__description {
+      color: $landing-features-list__description-color-hover;
+    }
+  }
+}
+
+.landing-features-list__icon {
+  margin-top: 45px;
+  margin-bottom: 23px;
+}
+
+.landing-features-list__title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 24px;
+  line-height: 34px;
+  color: $landing-features-list__title-color;
+}
+
+.landing-features-list__description {
+  margin-top: 0;
+  margin-bottom: 49px;
+  font-size: 16px;
+  line-height: 22px;
+  color: $landing-features-list__description-color;
+}

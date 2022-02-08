@@ -1,0 +1,121 @@
+.site-footer {
+  padding-top: 65px;
+  background-color: $site-footer-bgc;
+}
+
+.site-footer__wrapper {
+  max-width: 1415px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 140px;
+  row-gap: 55px;
+  position: relative;
+}
+
+.site-footer__title {
+  display: block;
+  margin-bottom: 29px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $site-footer__title-color;
+}
+
+.site-footer__list-wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 65px;
+}
+
+.site-footer__links-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.site-footer__item {
+  line-height: 25px;
+}
+
+.site-footer__link {
+  font-size: 15px;
+  text-decoration: none;
+  color: $site-footer__link-color;
+  opacity: 0.5;
+  line-height: inherit;
+}
+
+.site-footer__address {
+  font-size: 15px;
+  line-height: 25px;
+  color: $site-footer__address-color;
+  opacity: 0.5;
+  font-style: normal;
+}
+
+.site-footer__info-box {
+  position: absolute;
+  display: flex;
+  bottom: 14px;
+  left: 0;
+}
+
+.site-footer__copyright, .site-footer__years {
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $site-footer__copyright-color;
+  opacity: 0.5;
+}
+
+.site-footer__copyright {
+  margin-right: 59px;
+}
+
+.site-footer__absolute-footer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  position: relative;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 1px;
+    width: calc(100vw - 22px);
+    transform: translateX(-50%);
+    background-color: $site-footer__absolute-footer-before-bgc;
+  }
+}
+.site-footer__absolute-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.site-footer__absolute-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-footer__conditionals, .site-footer__developer {
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $site-footer__absolute-link-color;
+  text-decoration: none;
+}
+
+.site-footer__developer {
+  margin-left: 404px;
+}

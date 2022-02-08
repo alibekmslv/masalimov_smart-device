@@ -1,0 +1,14 @@
+.logo {
+  display: block;
+}
+
+.logo__image {
+  display: block;
+}
+
+@media (max-width: $tablet) {
+  .logo--shrink .logo__image {
+    width: 38px;
+    height: 38px;
+  }
+}

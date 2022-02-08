@@ -1,0 +1,23 @@
+.input {
+  position: relative;
+}
+
+.input__label {
+  position: absolute;
+  top: 14px;
+  left: 17px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.input__input {
+  box-sizing: border-box;
+  color: $input__input-color;
+  width: 100%;
+  height: 50px;
+  border: none;
+  padding: 14px 17px;
+  margin: 0;
+  background-color: $input__input-bgc;
+  line-height: 22px;
+}

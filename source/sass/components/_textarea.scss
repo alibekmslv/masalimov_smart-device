@@ -1,0 +1,22 @@
+.textarea {
+  position: relative;
+}
+
+.textarea__label {
+  position: absolute;
+  top: 14px;
+  left: 17px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.textarea__textarea {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  padding: 14px 17px;
+  margin: 0;
+  color: $textarea__textarea-color;
+  background-color: $textarea__textarea-bgc;
+  line-height: 22px;
+}

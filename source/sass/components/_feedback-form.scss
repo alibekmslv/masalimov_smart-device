@@ -1,0 +1,45 @@
+.feedback-form {
+  color: $feedback-form-color;
+}
+
+.feedback-form__title {
+  margin-top: 0;
+  margin-bottom: 7px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.feedback-form__subtitle {
+  margin-top: 0;
+  margin-bottom: 49px;
+  line-height: 22px;
+}
+
+.feedback-form__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 270px);
+  column-gap: 30px;
+  row-gap: 40px;
+}
+
+.feedback-form__textarea {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.feedback-form__checkbox {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.feedback-form__button {
+  margin-top: 3px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}

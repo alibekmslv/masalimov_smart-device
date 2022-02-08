@@ -1,0 +1,89 @@
+.landing-company-services {
+  background-color: $landing-company-services-bgc;
+  padding-top: 93px;
+  padding-bottom: 127px;
+}
+
+.landing-company-services__wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.landing-company-services__title {
+  margin-top: 0;
+  margin-bottom: 47px;
+  display: grid;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+  color: $landing-company-services__title-color;
+}
+
+.landing-company-services__list {
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  column-gap: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.landing-company-services__item {
+  position: relative;
+  width: 370px;
+  height: 620px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background-repeat: no-repeat;
+  }
+
+
+  a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding-top: 53px;
+    padding-left: 44px;
+    padding-right: 44px;
+    display: block;
+  }
+}
+
+.landing-company-services__icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  fill: transparent;
+}
+
+.landing-company-services__item--production::before {
+  background-image: url("../img/print-circuit-board-production.jpg");
+}
+
+.landing-company-services__item--installation::before {
+  background-image: url("../img/print-circuit-board-installation.jpg");
+}
+
+.landing-company-services__item--accessories::before {
+  background-image: url("../img/print-circuit-board-accessories.jpg");
+}
+
+.landing-company-services__service-name {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: $landing-company-services-name-color;
+}

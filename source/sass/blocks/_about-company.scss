@@ -1,0 +1,55 @@
+.about-company {
+  margin-bottom: 96px;
+}
+
+.about-company__wrapper {
+  max-width: 1170px;
+  min-height: 317px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 180px;
+  position: relative;
+
+  &::before {
+    content: "2005";
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 156px;
+    display: block;
+    width: 117px;
+    height: 317px;
+    background-image: url("../img/backgrounds/printed-circuit-board.jpg");
+    position: absolute;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    line-height: 120px;
+    left: 0;
+    top: 0;
+    background-clip: text;
+    color: transparent
+  }
+}
+
+.about-company__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Roboto Condensed";
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+  color: $about-company__title-color;
+}
+
+.about-company__paragraph {
+  margin-top: 18px;
+  margin-bottom: 38px;
+  font-size: 16px;
+  line-height: 22px;
+  color: $about-company__paragraph-color;
+}
+
+.about-company__button {
+  min-width: 180px;
+  min-height: 45px;
+}
+

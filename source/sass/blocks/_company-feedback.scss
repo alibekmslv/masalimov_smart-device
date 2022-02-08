@@ -1,0 +1,13 @@
+.company-feedback {
+  padding-top: 96px;
+  padding-bottom: 113px;
+  background-color: $company-feedback-bgc;
+}
+
+.company-feedback__wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1170px;
+  display: flex;
+  justify-content: flex-end;
+}

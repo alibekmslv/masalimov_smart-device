@@ -1,0 +1,40 @@
+.company-contacts {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.company-contacts__description {
+  margin-left: 0;
+  margin-right: 88px;
+}
+
+.company-contacts__description:last-of-type {
+  margin-right: 0;
+}
+
+.company-contacts__link {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 16px;
+  align-items: center;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 18px;
+  color: $company-contacts-link-color;
+}
+
+@media (max-width: $tablet) {
+  .company-contacts__icon--envelope {
+    width: 26px;
+    height: 19px;
+  }
+
+  .company-contacts__icon--phone-call {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+

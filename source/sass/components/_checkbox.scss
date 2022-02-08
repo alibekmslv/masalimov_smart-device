@@ -1,0 +1,33 @@
+.checkbox {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 16px;
+  font-size: 14px;
+  line-height: 16px;
+  color: $checkbox-color;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.checkbox__icon-checkmark {
+  display: none;
+}
+
+.checkbox__input:checked + .checkbox__icon .checkbox__icon-checkmark {
+  display: block;
+}
+
+.checkbox__input:focus + .checkbox__icon + .checkbox__text {
+  color: white;
+}
+
+.checkbox__icon-checkbox {
+  fill: transparent;
+}
+
+.checkbox__icon-checkmark {
+  fill: transparent;
+}
