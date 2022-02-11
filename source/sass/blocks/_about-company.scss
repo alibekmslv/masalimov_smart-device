@@ -1,5 +1,18 @@
 .about-company {
+  position: relative;
   margin-bottom: 96px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  @media (max-width: $desktop) {
+    margin-bottom: 75px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-bottom: 65px;
+    padding-left: 17px;
+    padding-right: 15px;
+  }
 }
 
 .about-company__wrapper {
@@ -10,23 +23,31 @@
   padding-left: 180px;
   position: relative;
 
-  &::before {
-    content: "2005";
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-weight: 700;
-    font-size: 156px;
-    display: block;
-    width: 117px;
-    height: 317px;
-    background-image: url("../img/backgrounds/printed-circuit-board.jpg");
-    position: absolute;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    line-height: 120px;
-    left: 0;
-    top: 0;
-    background-clip: text;
-    color: transparent
+  @media (max-width: $tablet) {
+    padding-left: 0;
+  }
+}
+
+.about-company::before {
+  content: "2005";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 156px;
+  display: block;
+  width: 117px;
+  height: 317px;
+  background-image: url("../img/backgrounds/printed-circuit-board.jpg");
+  position: absolute;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  line-height: 120px;
+  left: 25px;
+  top: 0;
+  background-clip: text;
+  color: transparent;
+
+  @media (max-width: $tablet) {
+    display: none;
   }
 }
 
@@ -38,6 +59,16 @@
   line-height: 51px;
   font-weight: normal;
   color: $about-company__title-color;
+
+  @media (max-width: $desktop) {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $tablet) {
+    font-size: 28px;
+    line-height: 39px;
+  }
 }
 
 .about-company__paragraph {
@@ -46,10 +77,20 @@
   font-size: 16px;
   line-height: 22px;
   color: $about-company__paragraph-color;
+
+  @media (max-width: $desktop) {
+    margin-top: 24px;
+    margin-bottom: 34px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-top: 19px;
+    margin-bottom: 29px;
+  }
 }
 
 .about-company__button {
   min-width: 180px;
-  min-height: 45px;
+  height: 45px;
 }
 

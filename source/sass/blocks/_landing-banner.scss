@@ -2,21 +2,59 @@
   background-image: url("../img/backgrounds/landing-banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  display: grid;
+  overflow-x: hidden;
 }
 
 .landing-banner__wrapper {
+  position: relative;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 718px auto;
+  column-gap: 40px;
   max-width: 1414px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 316px;
+  margin-top: 258px;
   padding-bottom: 278px;
+  background-image: url("../img/backgrounds/triangles.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  @media (max-width: $desktop) {
+    padding-left: 88px;
+    padding-bottom: 182px;
+    margin-top: 82px;
+    max-width: none;
+    grid-template-columns: auto auto;
+    background-image: url("../img/backgrounds/triangles-tablet.svg");
+    background-position-x: calc(100%);
+  }
+
+  @media (max-width: $tablet) {
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 70px;
+    grid-template-columns: auto;
+  }
 }
 
 .landing-banner__text {
   display: grid;
   justify-items: start;
+  margin-top: 58px;
+  z-index: 10;
+
+  @media (max-width: $desktop) {
+    margin-top: 106px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-top: 220px;
+  }
 }
 
 .landing-banner__title {
@@ -28,6 +66,20 @@
   text-transform: uppercase;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: $landing-banner-title-color;
+
+  @media (max-width: $desktop) {
+    max-width: 470px;
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: $tablet) {
+    max-width: 277px;
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 30px;
+  }
 }
 
 .landing-banner__subtitle {
@@ -40,19 +92,88 @@
   line-height: 34px;
   color: $landing-banner-subtitle-color;
 
-  &::before {
-    display: block;
-    position: absolute;
+  @media (max-width: $desktop) {
+    max-width: 356px;
+    font-size: 18px;
+    line-height: 28px;
+    padding-left: 51px;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $tablet) {
+    max-width: 245px;
+    font-size: 16px;
+    line-height: 25px;
+    padding-left: 48px;
+    margin-bottom: 36px;
+  }
+}
+
+.landing-banner__subtitle::before {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 14px;
+  content: "";
+  width: 66px;
+  height: 2px;
+  background-color: $landing-banner-subtitle-before-bgc;
+
+  @media (max-width: $desktop) {
+    width: 33px;
+    left: 3px;
+  }
+
+  @media (max-width: $tablet) {
+    top: 12px;
     left: 0;
-    top: 14px;
-    content: "";
-    width: 66px;
-    height: 2px;
-    background-color: $landing-banner-subtitle-before-bgc;
   }
 }
 
 .landing-banner__button {
+  font-size: 16px;
+  line-height: 19px;
   min-width: 407px;
   min-height: 55px;
+
+  @media (max-width: $desktop) {
+    min-width: 379px;
+    margin-left: 51px;
+  }
+
+  @media (max-width: $tablet) {
+    min-width: 287px;
+    margin-left: 0;
+  }
+}
+
+.landing-banner__button-hide-on-mobile {
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.landing-banner__button-show-on-mobile {
+  display: none;
+  @media (max-width: $tablet) {
+    display: inline-flex;
+  }
+}
+
+.landing-banner__product-image {
+  position: absolute;
+  display: block;
+  right: -76px;
+  top: 0;
+
+  @media (max-width: $desktop) {
+    width: 465px;
+    height: 340px;
+    right: 0;
+  }
+
+  @media (max-width: $tablet) {
+    width: 300px;
+    height: 220px;
+  }
 }

@@ -1,31 +1,42 @@
 .company-contacts {
   margin-top: 0;
   margin-bottom: 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  row-gap: 15px;
+  column-gap: 88px;
   align-items: center;
+  width: 100%;
+
+  @media (max-width: $desktop) {
+    column-gap: 33px;
+  }
 }
 
 .company-contacts__description {
   margin-left: 0;
-  margin-right: 88px;
-}
-
-.company-contacts__description:last-of-type {
-  margin-right: 0;
 }
 
 .company-contacts__link {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: min-content max-content;
   column-gap: 16px;
   align-items: center;
   text-decoration: none;
   font-size: 16px;
   line-height: 18px;
   color: $company-contacts-link-color;
+
+  @media (max-width: $desktop) {
+    column-gap: 0;
+  }
 }
 
-@media (max-width: $tablet) {
+@media (max-width: $desktop) {
+  .company-contacts__text {
+    display: none;
+  }
+
   .company-contacts__icon--envelope {
     width: 26px;
     height: 19px;

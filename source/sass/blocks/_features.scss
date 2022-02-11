@@ -1,4 +1,18 @@
 .features {
   margin-top: 112px;
   margin-bottom: 110px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  @media (max-width: $desktop) {
+    margin-top: 54px;
+    margin-bottom: 60px;
+
+  }
+
+  @media (max-width: $tablet) {
+    margin-top: 37px;
+    padding-left: 14px;
+    padding-right: 16px;
+  }
 }

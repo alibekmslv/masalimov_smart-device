@@ -2,6 +2,16 @@
   padding-top: 96px;
   padding-bottom: 113px;
   background-color: $company-feedback-bgc;
+
+  @media (max-width: $desktop) {
+    padding-top: 83px;
+    padding-bottom: 104px;
+  }
+
+  @media (max-width: $tablet) {
+    padding-top: 33px;
+    padding-bottom: 41px;
+  }
 }
 
 .company-feedback__wrapper {
@@ -10,4 +20,9 @@
   max-width: 1170px;
   display: flex;
   justify-content: flex-end;
+
+  @media (max-width: $desktop) {
+    max-width: none;
+    justify-content: center;
+  }
 }

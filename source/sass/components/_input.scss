@@ -19,5 +19,10 @@
   padding: 14px 17px;
   margin: 0;
   background-color: $input__input-bgc;
+  font-size: 16px;
   line-height: 22px;
+
+  @media (max-width: $desktop) {
+    height: 52px;
+  }
 }
